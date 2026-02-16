@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Huzz Enterprises</title>
+  <title>Private Access Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #0f172a;
-      color: white;
+      background-color: #0a0a0a;
+      color: #d1d1d1;
+      font-family: 'Courier New', monospace;
       text-align: center;
     }
 
     header {
-      padding: 40px 20px;
-      background: #1e293b;
+      padding: 60px 20px 30px 20px;
+      border-bottom: 1px solid #222;
     }
 
     h1 {
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+      color: #8b0000;
       margin: 0;
-      font-size: 2.5rem;
+    }
+
+    .subtext {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #555;
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px auto;
-      width: 90%;
+      background-color: #111;
+      border: 1px solid #222;
+      padding: 25px;
+      margin: 25px auto;
       max-width: 400px;
-      border-radius: 10px;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #8b0000;
+      box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      color: #aaa;
     }
 
     button {
+      background-color: transparent;
+      border: 1px solid #8b0000;
+      color: #8b0000;
       padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background: #38bdf8;
-      color: black;
-      font-weight: bold;
+      font-family: 'Courier New', monospace;
       cursor: pointer;
+      transition: 0.3s ease;
     }
 
     button:hover {
-      background: #0ea5e9;
+      background-color: #8b0000;
+      color: black;
+    }
+
+    .restricted {
+      font-size: 0.8rem;
+      color: #444;
+      margin-top: 60px;
+      letter-spacing: 2px;
     }
 
     footer {
-      padding: 20px;
-      background: #1e293b;
-      font-size: 0.9rem;
+      padding: 30px 10px;
+      font-size: 0.75rem;
+      color: #333;
     }
 
     a {
-      color: #38bdf8;
       text-decoration: none;
     }
   </style>
@@ -66,37 +99,39 @@
 <body>
 
 <header>
-  <h1>Huzz Enterprises</h1>
-  <p>Fast. Reliable. Smart.</p>
+  <h1>ACCESS PORTAL</h1>
+  <div class="subtext">invitation only</div>
 </header>
 
 <div class="section">
-  <h2>Products</h2>
 
   <div class="card">
-    <h3>Basic Package</h3>
-    <p>$5</p>
-    <button onclick="alert('DM me to order!')">Order Now</button>
+    <h2>Standard Access</h2>
+    <div class="price">$5</div>
+    <button onclick="alert('Orders handled privately.')">Request</button>
   </div>
 
   <div class="card">
-    <h3>Premium Package</h3>
-    <p>$10</p>
-    <button onclick="alert('DM me to order!')">Order Now</button>
+    <h2>Premium Access</h2>
+    <div class="price">$10</div>
+    <button onclick="alert('Limited availability.')">Request</button>
   </div>
 
 </div>
 
 <div class="section">
-  <h2>Pre-Order</h2>
-  <p>Reserve your spot for tomorrow.</p>
-  <a href="https://forms.google.com" target="_blank">
-    <button>Pre-Order Here</button>
+  <h2>Reserve Allocation</h2>
+  <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">
+    <button>Enter Details</button>
   </a>
 </div>
 
+<div class="restricted">
+  UNAUTHORIZED DISTRIBUTION PROHIBITED
+</div>
+
 <footer>
-  © 2026 Huzz Enterprises
+  © 2026 Private Network
 </footer>
 
 </body>
