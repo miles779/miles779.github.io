@@ -10,25 +10,14 @@
 <body>
   <header>
     <h1>MilesLab</h1>
-    <p class="tagline">Interactive experiments and fun projects</p>
+    <p class="tagline">Global Click Counter</p>
   </header>
 
   <main>
     <section class="card">
-      <h2>Welcome!</h2>
-      <p>This is the beginning of your interactive website. You can add games, tools, experiments, and anything else you imagine.</p>
-      <button id="hello-btn">Click Me</button>
-      <p id="hello-text"></p>
-    </section>
-
-    <section class="card">
-      <h2>More Projects Coming Soon</h2>
-      <ul>
-        <li>Mini games</li>
-        <li>Simulations</li>
-        <li>Fun tools</li>
-        <li>Interactive experiments</li>
-      </ul>
+      <h2>Global Click Button</h2>
+      <p id="counter-text">Loading...</p>
+      <button id="click-btn">Click Me!</button>
     </section>
   </main>
 
@@ -36,7 +25,16 @@
     <p>Made by Miles</p>
   </footer>
 
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    const SUPABASE_URL = "YOUR_SUPABASE_URL_HERE";
+    const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY_HERE";
+
+    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>
-
